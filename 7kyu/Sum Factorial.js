@@ -19,7 +19,7 @@ function sumFactorial(arr){
     // Recursive factorial function since JS doesn't have a built in factorial method like it does with square root,absolute vaue, etc.
     // If n < 0, return -1. else if n === 0, return 1. else return n * factortial(n-1)
     function factorial(n) {
-        return n < 0 ? -1 : n === 0 ? 1 : n * factorial(n - 1);
+        return n < 0 ? -1 : n === 0 ? 1 : n * factorial(n - 1)
     }
     // Changes every index's value to that of it's factorial value. so if array[1] === 3, it would get changed to array[1] = 6
     for (let i = 0; i < arr.length; i++) {
