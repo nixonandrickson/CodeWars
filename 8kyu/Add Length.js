@@ -21,5 +21,8 @@ function addLength(str) {
     
     // Returns the new appended array with the concatenations
     return strArr
+
+    // More efficient way is to map the array of words. The mapping will replace each element with itself a space and the length of the element
+    // return str.split(' ').map(e => `${e} ${e.length}`)
 }
 
