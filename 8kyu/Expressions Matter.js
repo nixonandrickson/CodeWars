@@ -82,12 +82,11 @@ function expressionMatter(a, b, c) {
         return a * b * c
     }
 
-    // Better is to get the Math.max() of all the possible permutations
-    return Math.max (
-        a + b + c,
-        a * b * c,
-        a * (b + c),
-        (a + b) * c
-    )
-    
+    // Better is to get the Math.max() of all the possible permutations.
+    // return Math.max (
+    //     a + b + c,
+    //     a * b * c,
+    //     a * (b + c),
+    //     (a + b) * c
+    // )
 }
