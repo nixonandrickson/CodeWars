@@ -34,9 +34,3 @@ function isOpposite(s1,s2) {
         return false
     }
 }
-
-
-console.log(isOpposite("eTLpf","GAvnu"))
-console.log(isOpposite("",""))
-
-console.log('eTLpf' == 'GAvnu')
