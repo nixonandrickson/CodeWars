@@ -21,3 +21,4 @@ function breakChocolate(n, m) {
 Minimum breaks = ( rows x columns ) - 1
    */
 }
+
