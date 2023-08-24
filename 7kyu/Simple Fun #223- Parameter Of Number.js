@@ -37,3 +37,4 @@ function parameter(n) {
     return [numAdd, numMult].reduce(lcm)
 
 }
+
