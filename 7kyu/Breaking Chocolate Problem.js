@@ -21,7 +21,3 @@ function breakChocolate(n, m) {
 Minimum breaks = ( rows x columns ) - 1
    */
 }
-
-console.log(breakChocolate(5, 5))
-console.log(breakChocolate(-1, 3))
-console.log(breakChocolate(0, 1))
