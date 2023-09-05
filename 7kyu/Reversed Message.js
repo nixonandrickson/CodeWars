@@ -8,5 +8,8 @@
 
 
 function reverseMessage(str) {
-    return str.split(``).reverse().join('')
+        // First makes the whole string lowercase. Then splits the string by character, reverses them all and joins them back together into a "sentence".
+        // Split the reversed words into an array to capitalize each individual word using a map function. Finally join the array back together.
+
+    return str.toLowerCase().split(``).reverse().join('').split(' ').map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(' ')
 }
