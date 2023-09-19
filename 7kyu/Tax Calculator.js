@@ -13,16 +13,22 @@
 
 
 function taxCalculator(total) {
+    // If 0 or negative return 0
     if (total <= 0) {
         return 0
+    // 10% tax on any total 10 or less. Stops at 2 decimal places
     }else if (total <= 10) {
         return +((total * 0.1).toFixed(2))
+    // 10% tax on the first 10 then 7% tax on the next 10
     }else if (total <= 20) {
         return +((((total - 10) * .07) + 1).toFixed(2))
+    // 10% tax on the first 10 then 7% tax on the next 10 then 5% on the next 10        
     }else if (total <= 30) {
         return +((((total - 20) * .05) + 1.7).toFixed(2))
+    // 10% tax on the first 10 then 7% tax on the next 10 then 5% on the next 10 then 3% on anything about 30
     }else if (total > 30) {
         return +((((total - 30) * .03) + 2.2).toFixed(2))
+    // Checks for any invalid inputs (non numbers)
     }else {
         return 0
     }
