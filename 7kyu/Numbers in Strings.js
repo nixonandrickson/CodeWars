@@ -7,9 +7,10 @@
 
 
 function solve(s) {
+    // First time using regex (regular expression)
     // \d is a digit (a character in the range [0-9]), and + means one or more times. Thus, \d+ means match one or more digits.
     // For example, the string "42" is matched by the pattern \d+.
-    // So this .match() method returns an array of only digits. Almost as if using a .split() method and using letters as the seperator
+    // So this .match() method returns an array of only numbers. Almost as if using a .split() method and using letters as the seperator
     let onlyNums = s.match(/\d+/g)
 
     // Returns the largest number in the filtered array of only numbers
