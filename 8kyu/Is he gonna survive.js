@@ -5,6 +5,7 @@
 
 
 function hero(bullets, dragons) {
+    // It takes 2 bullets to kill a dragon so if the amount of dragons times 2 equals less than the amount of bullets, the function should return true.
     if (dragons * 2 <= bullets) {
         return true
     }else {
